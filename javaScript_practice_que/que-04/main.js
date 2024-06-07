@@ -1,64 +1,75 @@
-/*Conditional Statements in JavaScript
+/*Conditional statements
 Conditional statements in JavaScript allow you to perform different actions based on different conditions.
+ There are several types of conditional statements in JavaScript:
+ 1. if Statement
+ The if statement is used to specify a block of code to be executed if a specified condition is true.*/
 
-If Statement
-The if statement is used to specify a block of code to be executed if a specified condition is true.*/
-
-// EXAMPLE O1
-let x = 5;
-if (x > 2) {
-    console.log("x is greater than 2");
+// Example 01
+let age = 25;
+if (age >= 18) {
+    console.log("You are eligible to vote.");
+    // Output: (You are eligible to vote)
 }
-// Output: x is greater than 2
-
-// EXAMPLE 02
-let a = 1;
-if (a > 2) {
-    console.log("a is greater than 2");
+if (age < 18) {
+    console.log("You are not eligible to vote.");
+     // Output: (You are not eligible to vote)
 }
-// Output: (no output, because the condition is false)
-
-/*If-Else Statement
-The if-else statement is used to specify a block of code to be executed if a specified condition is true, and another block of code to be executed if the condition is false.*/
-
-// EXAMPLE 01
-let b = 5;
-if (b > 2) {
-    console.log("b is greater than 2");
-} else {
-    console.log("b is not greater than 2");
+// Example 02
+let day = "Monday";
+if (day === "Monday") {
+    console.log("Today is Monday.");
+     // Output: (Today is Monday)
 }
-// Output: b is greater than 2
-
-// EXAMPLE 02
-let c = 1;
-if (c > 2) {
-    console.log("c is greater than 2");
-} else {
-    console.log("c is not greater than 2");
+if (day === "Friday") {
+    console.log("Today is Friday.");
+    // Output: (nothing)
 }
-// Output: c is not greater than 2
 
-/*If-Else If-Else Statement
-The if-else if-else statement is used to specify a block of code to be executed if a specified condition is true, another block of code to be executed if the first condition is false and the second condition is true, and another block of code to be executed if both conditions are false.*/
-// EXAMPLE O1
-let d = 5;
-if (d > 10) {
-    console.log("d is greater than 10");
-} else if (x > 2) {
-    console.log("d is greater than 2 but less than or equal to 10");
-} else {
-    console.log("d is less than or equal to 2");
+// 2. if-else Statement
+// Example 01
+let Age = 15;
+if (Age >= 18) {
+    console.log("You are eligible to vote.");
+    } else {
+        console.log("You are not eligible to vote.");
 }
-// Output: d is greater than 2 but less than or equal to 10
+// Example 02
+let Day = "Monday";
+if (Day === "Sunday") {
+    console.log("Today is Sunday.")
+    } else {
+        console.log("Today is not Sunday.")
+}
 
-// EXAMPLE 02
-let e = 1;
-if (e > 10) {
-    console.log("e is greater than 10");
-} else if (e > 2) {
-    console.log("e is greater than 2 but less than or equal to 10");
-} else {
-    console.log("e is less than or equal to 2");
+// else-if Statement
+// Example 01
+let score = 90;
+if (score >= 90) {
+    console.log("Grade: A");
+    } else if (score >= 80) {
+        console.log("Grade: B");
+        } else if (score >= 70) {
+            console.log("Grade: c")
+            } else {
+                console.log("Grade: F");
 }
-// Output: e is less than or equal to 2
+
+// Example 02
+let time = 9;
+if (time >= 6 && time < 12) {
+    console.log("Good morning");
+    } else if (time >= 12 && time < 17) {
+        console.log("Good afternoon");
+        } else if (time >= 17 && time < 21) {
+            console.log("Good evening");
+            } else {
+                console.log("Good night");   
+}
+
+// Ternary Operator (Smart form of else-if statement)
+// Example 01
+let age1 = 25;
+let result = (age1 >= 18) ?  "You are Adult" :  "You are not Adult";
+console.log(result);
+
+// I'm so Excited and happy today i'm learned about conditional statement in javaScript.
